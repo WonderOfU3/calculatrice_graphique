@@ -1,0 +1,21 @@
+#all_buttons {
+    position: fixed;
+    left: 40vw;
+    top: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+}
+
+#result {
+    position: fixed;
+    left: 40vw;
+    top: 30vh;
+    width: 260px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    padding: 20px;
+}
