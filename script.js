@@ -14,9 +14,13 @@ buttons.forEach(button => {
                 resultDiv.textContent = "Error";
                 calc = "";
             }
+        } else if (value === "DEL") {
+            calc = calc.slice(0, -1);
+        } else if (value === "AC") {
+            calc = "";
         } else {
             calc += value;
-            resultDiv.textContent = calc;
         }
+        resultDiv.textContent = calc;
     });
 });
