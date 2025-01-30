@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>
-    <div id="result"></div>
-    <div id="all_buttons">
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="0">
-        <input type="button" value="+">
-        <input type="button" value="-">
-        <input type="button" value="*">
-        <input type="button" value="/">
-        <input type="button" value="=">
-        <input type="button" value="DEL">
-        <input type="button" value="AC">
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="calculator-container">
+        <div id="result" class="w-64 h-20 bg-gray-200 rounded-lg shadow-md mb-4 flex items-center justify-end p-4 text-3xl font-mono text-gray-800">
+            0
+        </div>
+        <div id="all_buttons" class="grid grid-cols-4 gap-2 w-64">
+            <input type="button" value="1" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="2" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="3" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="4" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="5" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="6" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="7" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="8" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="9" class="btn bg-gray-300 hover:bg-gray-400">
+            <input type="button" value="0" class="btn bg-gray-300 hover:bg-gray-400 col-span-3">
+            <input type="button" value="+" class="btn bg-blue-500 hover:bg-blue-600 text-white">
+            <input type="button" value="-" class="btn bg-blue-500 hover:bg-blue-600 text-white">
+            <input type="button" value="*" class="btn bg-blue-500 hover:bg-blue-600 text-white">
+            <input type="button" value="/" class="btn bg-blue-500 hover:bg-blue-600 text-white">
+            <input type="button" value="DEL" class="btn bg-red-500 hover:bg-red-600 text-white">
+            <input type="button" value="AC" class="btn bg-red-500 hover:bg-red-600 text-white">
+            <input type="button" value="=" class="btn bg-green-500 hover:bg-green-600 text-white col-span-2">
+        </div>
     </div>
 </body>
 </html>
